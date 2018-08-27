@@ -3,7 +3,7 @@ const Stack = require("./Stack");
 const reverseString = inputString => {
   const characters = inputString.slice().split("");
   const stack = new Stack();
-  let reversedString;
+  let reversedString = "";
 
   characters.forEach(character => {
     stack.push(character);
@@ -12,8 +12,7 @@ const reverseString = inputString => {
   characters.forEach(() => {
     reversedString += stack.pop();
   });
-
   return reversedString;
 };
 
-console.log(reverseString("Hello"));
+module.exports = reverseString;

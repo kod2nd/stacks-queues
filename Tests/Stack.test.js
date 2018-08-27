@@ -1,4 +1,4 @@
-const Stack = require("./Stack");
+const Stack = require("../Modules/Stack");
 
 test("testStack should be empty upon initilisation", () => {
   const testStack = new Stack();
